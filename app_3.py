@@ -82,7 +82,7 @@ def app():
     IP = st.text_input('IP')
     PORT = st.text_input('Port')
 
-    url = 'http://{}:{}'.format(IP, PORT)
+    url = 'http://{}:{}/video'.format(IP, PORT)
 
     st.subheader("For video-capture mark the checkbox 'Run'")
     run = st.checkbox("Run")
