@@ -11,6 +11,7 @@ import csv
 import time
 # from pygame import mixer
 # mixer.init()
+from playsound import playsound
 
 # from PIL import ImageGrab
 def app():
@@ -111,6 +112,7 @@ def app():
                 cv2.putText(img, "Not Allowed", (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
 #                 mixer.music.load('alarm.mp3')
 #                 mixer.music.play()
+                playsound('alarm.mp3)
                 markNTA(name)
                 
 
