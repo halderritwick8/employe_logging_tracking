@@ -76,10 +76,19 @@ def app():
     st.title("Board of Directors Room")
     lottie_img = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_0tue65cn.json")
     st_lottie(lottie_img,height=750, width=750)
+    
+#     USERNAME = st.text_input('Username')
+#     PASSWORD = st.text_input('Password')
+    IP = st.text_input('IP')
+    PORT = st.text_input('Port')
+
+    url = 'rtsp://{}:{}'.format(IP, PORT)
+
     st.subheader("For video-capture mark the checkbox 'Run'")
     run = st.checkbox("Run")
     FRAME_WINDOW =st.image([])
-    cap = cv2.VideoCapture(0)
+    # cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(url)
 
     while run:
         success, img = cap.read()
