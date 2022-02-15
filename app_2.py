@@ -9,8 +9,8 @@ import json
 import requests
 import csv 
 import time
-from pygame import mixer
-mixer.init()
+# from pygame import mixer
+# mixer.init()
 
 # from PIL import ImageGrab
 def app():
@@ -109,8 +109,8 @@ def app():
                 y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
                 cv2.rectangle(img, (x1,y1), (x2, y2), (0, 0, 255), 2)
                 cv2.putText(img, "Not Allowed", (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
-                mixer.music.load('alarm.mp3')
-                mixer.music.play()
+#                 mixer.music.load('alarm.mp3')
+#                 mixer.music.play()
                 markNTA(name)
                 
 
