@@ -8,3 +8,4 @@ streamlit==1.4.0
 streamlit_lottie==0.0.3
 cmake==3.22.2
 dlib==19.19.0
+SDL_mixer >= 2.0.0
