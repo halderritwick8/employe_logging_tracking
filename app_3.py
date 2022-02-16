@@ -84,7 +84,7 @@ def app():
     IP = st.text_input('IP')
     PORT = st.text_input('Port')
 
-    url = 'http://{}:{}@{}:{}/video'.format(USERNAME, PASSWORD, IP, PORT)
+    url = 'http://{}:{}@{}:{}//h264_ulaw.sdp'.format(USERNAME, PASSWORD, IP, PORT)
 
     st.subheader("For video-capture mark the checkbox 'Run'")
     run = st.checkbox("Run")
