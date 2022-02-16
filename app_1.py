@@ -77,12 +77,12 @@ def app():
     lottie_img = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_0tue65cn.json")
     st_lottie(lottie_img,height=750, width=750)
     
-#     USERNAME = st.text_input('Username')
-#     PASSWORD = st.text_input('Password')
+    USERNAME = st.text_input('Username')
+    PASSWORD = st.text_input('Password')
     IP = st.text_input('IP')
     PORT = st.text_input('Port')
 
-    url = 'http://{}:{}/video'.format(IP, PORT)
+    url = 'http://{}:{}@{}:{}/video'.format(USERNAME, PASSWORD, IP, PORT)
 
     st.subheader("For video-capture mark the checkbox 'Run'")
     run = st.checkbox("Run")
